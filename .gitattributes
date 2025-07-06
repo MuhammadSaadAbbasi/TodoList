@@ -1,11 +1,9 @@
-# ✅ Explicitly mark JavaScript as detectable (main logic)
+# ✅ Count JavaScript files as primary
 *.js linguist-detectable=true
 
-# ✅ Keep only one CSS file detectable (minimal influence)
+# ✅ Count style.css (main stylesheet)
 style.css linguist-detectable=true
 
-# ❌ Ignore all other .css files (like reset.css, theme.css etc.)
-*.css linguist-detectable=false
-
-# ❌ Ignore minified JS (not used but future-proofing)
+# ❌ Ignore any optional/minor/minified CSS or JS in future
+assets/*.css linguist-detectable=false
 *.min.js linguist-detectable=false
