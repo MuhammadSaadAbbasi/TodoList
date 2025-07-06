@@ -1,8 +1,8 @@
-# Tell GitHub Linguist to ignore CSS for language stats
-*.css linguist-detectable=false
+# Reduce CSS influence but keep it in language stats
+style.css linguist-detectable=true
 
-# Optional: ignore minified JavaScript files (not used here)
-*.min.js linguist-detectable=false
-
-# Force GitHub to treat JavaScript as the main language
+# Prioritize JavaScript as the dominant language
 *.js linguist-detectable=true
+
+# Still ignore unrelated/minified files (if added in future)
+*.min.js linguist-detectable=false
