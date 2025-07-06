@@ -2,7 +2,7 @@
 *.js linguist-detectable=true
 
 # ✅ Count style.css (main stylesheet)
-style.css linguist-detectable=true
+style.css linguist-detectable=false
 
 # ❌ Ignore any optional/minor/minified CSS or JS in future
 assets/*.css linguist-detectable=false
