@@ -1,8 +1,11 @@
-# Reduce CSS influence but keep it in language stats
-style.css linguist-detectable=true
-
-# Prioritize JavaScript as the dominant language
+# ✅ Explicitly mark JavaScript as detectable (main logic)
 *.js linguist-detectable=true
 
-# Still ignore unrelated/minified files (if added in future)
+# ✅ Keep only one CSS file detectable (minimal influence)
+style.css linguist-detectable=true
+
+# ❌ Ignore all other .css files (like reset.css, theme.css etc.)
+*.css linguist-detectable=false
+
+# ❌ Ignore minified JS (not used but future-proofing)
 *.min.js linguist-detectable=false
